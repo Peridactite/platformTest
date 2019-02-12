@@ -13,15 +13,3 @@ audio_play_sound(snd_kill_character, 0, 0);
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "caption" ""You're Dead!""
 draw_text(x + 0, y + -20, string("You're Dead!") + "");
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 7D274F2F
-/// @DnDApplyTo : 0934e08b-6d4a-4234-9a5a-6ded600d5157
-/// @DnDArgument : "expr" "-1"
-/// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "lives"
-with(obj_mainController) {
-lives += -1;
-
-}
